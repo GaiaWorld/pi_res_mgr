@@ -1,0 +1,13 @@
+[package]
+name = "pi_res_mgr"
+version = "0.1.0"
+authors = ["zmythleo <zmythleo@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+pi_share = { path = "../pi_share", features=["rc"]}
+pi_hash = {path="../pi_hash"}
+slotmap = "1.0"
+pi_slot_deque = {path="../pi_slot_deque"}
+pi_any = {path="../pi_any"}
+
