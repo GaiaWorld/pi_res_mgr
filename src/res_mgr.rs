@@ -4,8 +4,8 @@
 //! 需要外部设置的每个资源表内的每分组Cache的max_capacity和min_capacity及超时时间。
 //! 如果总容量有空闲， 则按权重提高那些满的Cache的cur_capacity
 
-use hash::XHashMap;
-use share::Share;
+use pi_hash::XHashMap;
+use pi_share::Share;
 use std::any::TypeId;
 use std::collections::hash_map::Entry;
 
@@ -223,7 +223,7 @@ impl ResMgr {
 #[cfg(test)]
 mod test_mod {
 
-    use share::Share;
+    use pi_share::Share;
 
     //use self::rand_core::{RngCore, SeedableRng};
     use crate::*;

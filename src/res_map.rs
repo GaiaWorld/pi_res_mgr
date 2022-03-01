@@ -7,10 +7,10 @@
 use std::collections::hash_map::{Entry, Iter};
 use std::hash::Hash;
 
-use any::{impl_downcast_box, BoxAny};
-use hash::XHashMap;
-use share::Share;
-use slot_deque::{Deque, Slot};
+use pi_any::{impl_downcast_box, BoxAny};
+use pi_hash::XHashMap;
+use pi_share::Share;
+use pi_slot_deque::{Deque, Slot};
 use slotmap::{new_key_type, Key};
 
 /// 资源，放入资源表的资源必须实现该trait

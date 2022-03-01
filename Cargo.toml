@@ -2,12 +2,16 @@
 name = "pi_res_mgr"
 version = "0.1.0"
 authors = ["zmythleo <zmythleo@gmail.com>"]
-edition = "2018"
+edition = "2021"
+description = "Resource Manager"
+repository = "https://github.com/GaiaWorld/pi_res_mgr.git"
+license = "MIT OR Apache-2.0"
+keywords = ["pi", "res", "res_mgr", "pi_res_mgr"]
 
 [dependencies]
-pi_share = { path = "../pi_share", features=["rc"]}
-pi_hash = {path="../pi_hash"}
+pi_share = { version = "0.1", features=["rc"]}
+pi_hash = "0.1"
+pi_any = "0.1"
 slotmap = "1.0"
-pi_slot_deque = {path="../pi_slot_deque"}
-pi_any = {path="../pi_any"}
+pi_slot_deque = "0.1"
 
